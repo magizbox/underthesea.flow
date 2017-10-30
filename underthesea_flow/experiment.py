@@ -2,7 +2,7 @@ import json
 from datetime import datetime
 from os import mkdir
 
-from numpy import mean
+from numpy import mean, ndarray
 from os.path import join
 from sklearn.model_selection import cross_val_score, train_test_split
 from sklearn.metrics import accuracy_score, f1_score, make_scorer
@@ -19,7 +19,7 @@ def _flat(l):
     """
     :type l: list of list
     """
-    return [item for sublist in l for item in sublist]
+    return [item[0] for item in l]
 
 
 class Experiment:
@@ -31,17 +31,10 @@ class Experiment:
         self.validation = validation
         self.log_folder = "."
 
-    def run(self):
-
+    def run(self, transformers):
         start = time.time()
 
-        # def score_func(y_true, y_pred, **kwargs):
-        #     accuracy_scores.append(accuracy_score(y_true, y_pred, **kwargs))
-        #     f1_scores.append(
-        #         f1_score(y_true, y_pred, average='micro', **kwargs))
-
         try:
-            # scorer = make_scorer(score_func)
             if isinstance(self.validation, TrainTestSplitValidation):
                 X_train, X_test, y_train, y_test = train_test_split(self.X,
                                                                     self.y,
@@ -50,17 +43,21 @@ class Experiment:
                 n_train = len(y_train)
                 n_test = len(y_test)
                 y_pred = self.estimator.predict(X_test)
-                y_pred = _flat(y_pred)
-                y_test = _flat(y_test)
-
-                output = {
-                    "expected": y_test,
-                    "actual": y_pred
-                }
-                tmp = datetime.now().strftime('%Y%m%d_%H%M%S')
-                log_folder = join(self.log_folder, tmp)
-                mkdir(log_folder)
-                write(join(log_folder, "result.json"), json.dumps(output))
+                if isinstance(y_pred, ndarray):
+                    pass
+                else:
+                    y_pred = _flat(y_pred)
+                    y_test = _flat(y_test)
+                    output = {
+                        "X": X_test,
+                        "expected": y_test,
+                        "actual": y_pred
+                    }
+                    tmp = datetime.now().strftime('%Y%m%d_%H%M%S')
+                    log_folder = join(self.log_folder, tmp)
+                    mkdir(log_folder)
+                    write(join(log_folder, "result.json"),
+                          json.dumps(output, ensure_ascii=False))
                 print("Train: ", n_train)
                 print("Test: ", n_test)
                 print("Accuracy :", accuracy_score(y_test, y_pred))
@@ -81,5 +78,5 @@ class Experiment:
             # accuracy = 0
         return time_result
 
-    def save_model(self, filename=None):
-        self.estimator.fit(self.X, self.y, filename=filename)
+    def save_model(self, model_filename=None):
+        self.estimator.fit(self.X, self.y, model_filename=model_filename)

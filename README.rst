@@ -32,3 +32,9 @@ Validation
 Available validation methods: TrainTestSplit, CrossValidation
 
 Available scores: `f1`, `accuracy`
+
+Train your own models
+=====================
+
+
+

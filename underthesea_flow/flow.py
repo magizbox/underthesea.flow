@@ -1,4 +1,5 @@
 import numpy
+from sklearn.preprocessing import MultiLabelBinarizer
 
 from underthesea_flow.experiment import Experiment
 from underthesea_flow.transformer.tagged import TaggedTransformer
@@ -13,6 +14,8 @@ class Flow:
         self.validation_method = TrainTestSplitValidation()
         self.scores = set()
         self.log_folder = "."
+        self.export_folder = "."
+        self.transformers = []
 
     def data(self, X=None, y=None, sentences=None):
         self.X = X
@@ -22,9 +25,12 @@ class Flow:
     def transform(self, transformer):
         if isinstance(transformer, TaggedTransformer):
             self.X, self.y = transformer.transform(self.sentences)
+        if isinstance(transformer, MultiLabelBinarizer):
+            self.y = transformer.fit_transform(self.y)
         else:
             self.X = transformer.text2vec(self.X).toarray()
             print("X Shape: ", self.X.shape)
+        self.transformers.append(transformer)
 
     def add_model(self, model):
         self.models.append(model)
@@ -46,7 +52,7 @@ class Flow:
                 y = self.y[:n]
                 e = Experiment(X, y, model.estimator, self.scores, self.validation_method)
                 e.log_folder = self.log_folder
-                results = e.run()
+                e.run(self.transformers)
 
     def visualize(self):
         pass
@@ -58,10 +64,10 @@ class Flow:
         model = self.models[0]
         model.clf.fit(self.X, self.y)
 
-    def save_model(self, model_name, filename):
+    def export(self, model_name, model_filename):
         model = [model for model in self.models if model.name == model_name][0]
         e = Experiment(self.X, self.y, model.estimator, None)
-        e.save_model(filename)
+        e.save_model(model_filename)
 
     def test(self, X, y_true, model):
         y_predict = model.predict(X)
