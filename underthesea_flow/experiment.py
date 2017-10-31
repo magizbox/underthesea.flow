@@ -1,11 +1,12 @@
 import json
 from datetime import datetime
 from os import mkdir
-
 from numpy import mean, ndarray
 from os.path import join
+import joblib
 from sklearn.model_selection import cross_val_score, train_test_split
 from sklearn.metrics import accuracy_score, f1_score, make_scorer
+from sklearn.multiclass import OneVsRestClassifier
 from sklearn.preprocessing import MultiLabelBinarizer
 import time
 
@@ -79,4 +80,9 @@ class Experiment:
         return time_result
 
     def save_model(self, model_filename=None):
-        self.estimator.fit(self.X, self.y, model_filename=model_filename)
+        if isinstance(self.estimator, OneVsRestClassifier):
+            self.estimator.fit(self.X, self.y)
+            joblib.dump(self.estimator, model_filename, protocol=2)
+            pass
+        else:
+            self.estimator.fit(self.X, self.y, model_filename=model_filename)

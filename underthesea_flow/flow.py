@@ -1,9 +1,13 @@
 import numpy
+from os.path import join
+
+from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.preprocessing import MultiLabelBinarizer
 
 from underthesea_flow.experiment import Experiment
 from underthesea_flow.transformer.tagged import TaggedTransformer
 from underthesea_flow.validation.validation import TrainTestSplitValidation
+import joblib
 
 
 class Flow:
@@ -50,7 +54,8 @@ class Flow:
             for n in N:
                 X = self.X[:n]
                 y = self.y[:n]
-                e = Experiment(X, y, model.estimator, self.scores, self.validation_method)
+                e = Experiment(X, y, model.estimator, self.scores,
+                               self.validation_method)
                 e.log_folder = self.log_folder
                 e.run(self.transformers)
 
@@ -64,9 +69,18 @@ class Flow:
         model = self.models[0]
         model.clf.fit(self.X, self.y)
 
-    def export(self, model_name, model_filename):
+    def export(self, model_name):
+        for transformer in self.transformers:
+            if isinstance(transformer, MultiLabelBinarizer):
+                joblib.dump(transformer,
+                            join(self.export_folder, "label.transformer.bin"), protocol=2)
+                pass
+            if isinstance(transformer, TfidfVectorizer):
+                joblib.dump(transformer,
+                            join(self.export_folder, "tfidf.transformer.bin"), protocol=2)
         model = [model for model in self.models if model.name == model_name][0]
         e = Experiment(self.X, self.y, model.estimator, None)
+        model_filename = join(self.export_folder, "model.bin")
         e.save_model(model_filename)
 
     def test(self, X, y_true, model):
