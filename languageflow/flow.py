@@ -5,6 +5,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.preprocessing import MultiLabelBinarizer
 
 from languageflow.experiment import Experiment
+from languageflow.export import Exporter
 from languageflow.transformer.tagged import TaggedTransformer
 from languageflow.validation.validation import TrainTestSplitValidation
 import joblib
@@ -69,19 +70,9 @@ class Flow:
         model = self.models[0]
         model.clf.fit(self.X, self.y)
 
-    def export(self, model_name):
-        for transformer in self.transformers:
-            if isinstance(transformer, MultiLabelBinarizer):
-                joblib.dump(transformer,
-                            join(self.export_folder, "label.transformer.bin"), protocol=2)
-                pass
-            if isinstance(transformer, TfidfVectorizer):
-                joblib.dump(transformer,
-                            join(self.export_folder, "tfidf.transformer.bin"), protocol=2)
-        model = [model for model in self.models if model.name == model_name][0]
-        e = Experiment(self.X, self.y, model.estimator, None)
-        model_filename = join(self.export_folder, "model.bin")
-        e.save_model(model_filename)
+    @staticmethod
+    def export(self, model, filename):
+        Exporter.export(model, filename)
 
     def test(self, X, y_true, model):
         y_predict = model.predict(X)
