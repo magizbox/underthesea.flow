@@ -1,40 +1,14 @@
-================
-Underthesea Flow
-================
+=========================
+Underthesea LanguageFlow
+=========================
 
-It's a very messy project, contains a lot of useful stuffs for NLP experiments
+.. image:: https://img.shields.io/badge/latest-1.5.1-brightgreen.svg
 
-Flow
-====
 
-.. image:: https://raw.githubusercontent.com/magizbox/underthesea.flow/master/flow.png
+Data loaders and abstractions for text and NLP
 
-Flow has **data readers**, **transformers**, **models**, **scores**, **validation methods**
-
-Data Readers
-============
-
-Available data readers: `TaggedCorpus`
-
-Transformers
-============
-
-Available transformers: `TaggedTransformer`
-
-Models
-======
-
-Available models: Conditional Random Fields (`CRF`)
-
-Validation
-==========
-
-Available validation methods: TrainTestSplit, CrossValidation
-
-Available scores: `f1`, `accuracy`
-
-Train your own models
-=====================
+* Free software: GNU General Public License v3
+* Documentation `Documentation <https://docs.google.com/document/d/e/2PACX-1vQH3FxuTwzOns9tjvvhrmpH6YqWng4JDJZ4fqEcb5BrTnIwEMZh3ZVeaGzFSwcIN70GRk40c2yn3L_L/pub>`_
 
 
 
