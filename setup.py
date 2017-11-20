@@ -24,14 +24,14 @@ test_requirements = [
 ]
 
 setup(
-    name='underthesea_flow',
-    version='0.1.1-alpha',
+    name='languageflow',
+    version='1.1.6',
     description="Useful stuffs for NLP experiments",
     long_description=readme + '\n\n' + history,
     author="Vu Anh",
     author_email='brother.rain.1024@gmail.com',
-    url='https://github.com/magizbox/underthesea_flow',
-    packages=find_packages(include=['underthesea_flow']),
+    url='https://github.com/magizbox/underthesea.flow',
+    packages=find_packages(include=['languageflow']),
     include_package_data=True,
     install_requires=requirements,
     license="MIT license",
