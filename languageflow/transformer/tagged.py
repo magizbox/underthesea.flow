@@ -1,4 +1,4 @@
-from underthesea_flow.transformer.tagged_feature import word2features
+from languageflow.transformer.tagged_feature import word2features
 
 
 class TaggedTransformer:

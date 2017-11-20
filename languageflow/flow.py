@@ -4,9 +4,9 @@ from os.path import join
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.preprocessing import MultiLabelBinarizer
 
-from underthesea_flow.experiment import Experiment
-from underthesea_flow.transformer.tagged import TaggedTransformer
-from underthesea_flow.validation.validation import TrainTestSplitValidation
+from languageflow.experiment import Experiment
+from languageflow.transformer.tagged import TaggedTransformer
+from languageflow.validation.validation import TrainTestSplitValidation
 import joblib
 
 

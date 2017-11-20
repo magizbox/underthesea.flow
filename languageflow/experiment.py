@@ -12,7 +12,7 @@ import time
 
 from underthesea.util.file_io import write
 
-from underthesea_flow.validation.validation import TrainTestSplitValidation, \
+from languageflow.validation.validation import TrainTestSplitValidation, \
     CrossValidation
 
 

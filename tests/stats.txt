@@ -1,3 +1,0 @@
-Sentences    : 1
-Unique words : 10
-Top words    : bom    N    I-NP, đất    N    I-NP, nghèo    A    I-NP, của    E    B-PP, không    R    B-VP, Mảnh    Nc    B-NP, đạn    N    B-NP, .    CH    O, còn    V    I-VP, người    N    B-NP

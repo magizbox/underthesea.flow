@@ -1,6 +1,6 @@
 from unittest import TestCase
 from os.path import join, dirname
-from underthesea_flow.reader.tagged_corpus import TaggedCorpus
+from languageflow.reader.tagged_corpus import TaggedCorpus
 
 
 class TestTaggedCourpus(TestCase):

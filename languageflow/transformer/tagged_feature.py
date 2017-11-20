@@ -23,7 +23,7 @@ import re
 
 from os.path import join, dirname
 
-from underthesea_flow.reader.dictionary_loader import DictionaryLoader
+from languageflow.reader.dictionary_loader import DictionaryLoader
 
 words = DictionaryLoader(join(dirname(__file__), "Viet74K.txt")).words
 lower_words = set([word.lower() for word in words])

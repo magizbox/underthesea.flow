@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from unittest import TestCase
 
-from underthesea_flow.transformer.tagged_feature import text_istitle
+from languageflow.transformer.tagged_feature import text_istitle
 
 sentence_1 = [(u"Chào", "V"), (u"em", "N"), (u"cô gái", "N"), (u"Lam Hồng", "N")]
 

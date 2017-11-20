@@ -1,3 +1,3 @@
 # -*- coding: utf-8 -*-
 
-"""Unit test package for underthesea_flow."""
+"""Unit test package for languageflow."""

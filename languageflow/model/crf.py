@@ -1,4 +1,4 @@
-from underthesea_flow.model import Model
+from languageflow.model import Model
 import pycrfsuite
 
 

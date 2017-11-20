@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from unittest import TestCase
-from underthesea_flow.transformer.tagged_feature import apply_function, template2features, word2features
+from languageflow.transformer.tagged_feature import apply_function, template2features, word2features
 
 template = [
         "T[0].lower", "T[-1].lower", "T[1].lower",
