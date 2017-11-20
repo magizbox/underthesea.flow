@@ -2,7 +2,7 @@
 Underthesea LanguageFlow
 =========================
 
-.. image:: https://img.shields.io/badge/latest-1.5.1-brightgreen.svg
+.. image:: https://img.shields.io/badge/latest-1.1.5-brightgreen.svg
 
 
 Data loaders and abstractions for text and NLP
