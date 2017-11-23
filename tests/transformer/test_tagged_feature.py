@@ -19,3 +19,33 @@ class TestTaggedFeature(TestCase):
         sent = [["Mảnh", "Nc", "B-NP"], ["đất", "N", "I-NP"]]
         self.assertEqual(["Mảnh"],  template2features(sent, i=0, token_syntax="T[0]", debug=False))
         self.assertEqual(["T[0]=Mảnh"], template2features(sent, i=0, token_syntax="T[0]", debug=True))
+
+    def test_template2features_1(self):
+        sent = [["người", "N", "B-NP"], ["nghèo", "A", "I-NP"]]
+        self.assertEqual(["B-NP"],  template2features(sent, i=0, token_syntax="T[0][2]", debug=False))
+        self.assertEqual(["T[0][2]=B-NP"], template2features(sent, i=0, token_syntax="T[0][2]", debug=True))
+
+    def test_template2features_2(self):
+        sent = [["người", "N", "B-NP"], ["nghèo", "A", "I-NP"]]
+        self.assertEqual(["B-NP"],  template2features(sent, i=-1, token_syntax="T[1][2]", debug=False))
+        self.assertEqual(["T[1][2]=B-NP"], template2features(sent, i=-1, token_syntax="T[1][2]", debug=True))
+
+    def test_apply_function(self):
+        self.assertEquals("người", apply_function("lower", "NGƯỜI"))
+        self.assertEquals(True, apply_function("istitle", "B-NP"))
+        self.assertEquals(True, apply_function("isallcap", "N"))
+        self.assertEquals("True", apply_function("isdigit", "1"))
+        self.assertEquals("True", apply_function("is_in_dict", "người"))
+        self.assertEquals("False", apply_function("is_in_dict", "Thoát nước Hà Nội "))
+
+    def test_word2features(self):
+        sent = [["người", "N", "B-NP"], ["nghèo", "A", "I-NP"]]
+        expected = word2features(sent, i=0, template=template)[0]
+        actual = "T[0].lower=người"
+        self.assertEquals(expected, actual)
+
+    def test_word2features_2(self):
+        sent = [["người", "N", "B-NP"], ["nghèo", "A", "I-NP"]]
+        expected = word2features(sent, i=1, template=template)[0]
+        actual = "T[0].lower=nghèo"
+        self.assertEquals(expected, actual)
