@@ -1,19 +1,14 @@
 from unittest import TestCase
 
-from languageflow.transformer.tfidf import TfidfDictionaryVectorizer, TfidfVectorizer
-
-
-class TestTfidfDictionaryVectorizer(TestCase):
-    def test_text2vec(self):
-        text = ["toi di hoc"]
-        tfidf = TfidfDictionaryVectorizer()
-        text2vec = tfidf.text2vec(text)
-        pass
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 
 class TestTfidfVectorizer(TestCase):
-    def test_text2vec(self):
-        text = ["toi di hoc"]
-        tfidf = TfidfVectorizer()
-        text2vec = tfidf.text2vec(text)
+    def test_tfidf(self):
+        text = ["My whole world changed from the moment I met you ",
+                "And it would never be the same",
+                "From the moment I heard your name "]
+        vectorizer = TfidfVectorizer(ngram_range=(1, 2))
+        text_tfidf = vectorizer.fit_transform(text)
+        vocab = vectorizer.vocabulary_
         pass
