@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from sklearn.feature_extraction.text import TfidfVectorizer
+from languageflow.transformer.tfidf import TfidfVectorizer
 
 
 class TestTfidfVectorizer(TestCase):

@@ -1,13 +1,12 @@
-from languageflow.model import Model
 import pycrfsuite
 
 
-class CRF(Model):
+class CRF:
     def __init__(self, params=None):
         self.estimator = None
         self.params = params
 
-    def fit(self, X, y, filename=None):
+    def fit(self, X, y):
         """Fit FastText according to X, y
 
         Parameters:
@@ -23,13 +22,6 @@ class CRF(Model):
             trainer.append(xseq, yseq)
 
         trainer.set_params(self.params)
-        if filename:
-            trainer.train(filename)
-        else:
-            trainer.train('model.bin')
-            tagger = pycrfsuite.Tagger()
-            tagger.open('model.bin')
-            self.estimator = tagger
 
     def predict(self, X):
         if isinstance(X[0], list):

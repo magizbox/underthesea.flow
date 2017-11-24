@@ -1,14 +1,10 @@
 import numpy
-from os.path import join
-
-from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.preprocessing import MultiLabelBinarizer
 
 from languageflow.experiment import Experiment
 from languageflow.export import Exporter
 from languageflow.transformer.tagged import TaggedTransformer
 from languageflow.validation.validation import TrainTestSplitValidation
-import joblib
 
 
 class Flow:

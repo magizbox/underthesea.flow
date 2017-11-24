@@ -4,7 +4,7 @@ import fasttext as ft
 from underthesea.util.file_io import write
 
 
-class FastTextClassifier():
+class FastTextClassifier:
     def __init__(self):
         self.estimator = None
 
