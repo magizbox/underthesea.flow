@@ -1,9 +1,11 @@
+import joblib
 import numpy
+from os.path import join
 from sklearn.preprocessing import MultiLabelBinarizer
 
 from languageflow.experiment import Experiment
-from languageflow.export import Exporter
 from languageflow.transformer.tagged import TaggedTransformer
+from languageflow.transformer.tfidf import TfidfVectorizer
 from languageflow.validation.validation import TrainTestSplitValidation
 
 
@@ -24,14 +26,13 @@ class Flow:
         self.sentences = sentences
 
     def transform(self, transformer):
+        self.transformers.append(transformer)
         if isinstance(transformer, TaggedTransformer):
             self.X, self.y = transformer.transform(self.sentences)
+        if isinstance(transformer, TfidfVectorizer):
+            self.X = transformer.fit_transform(self.X)
         if isinstance(transformer, MultiLabelBinarizer):
             self.y = transformer.fit_transform(self.y)
-        else:
-            self.X = transformer.text2vec(self.X).toarray()
-            print("X Shape: ", self.X.shape)
-        self.transformers.append(transformer)
 
     def add_model(self, model):
         self.models.append(model)
@@ -66,9 +67,20 @@ class Flow:
         model = self.models[0]
         model.clf.fit(self.X, self.y)
 
-    @staticmethod
-    def export(self, model, filename):
-        Exporter.export(model, filename)
+    def export(self, model_name, export_folder):
+        for transformer in self.transformers:
+            if isinstance(transformer, MultiLabelBinarizer):
+                joblib.dump(transformer,
+                            join(export_folder, "label.transformer.bin"),
+                            protocol=2)
+            if isinstance(transformer, TfidfVectorizer):
+                joblib.dump(transformer,
+                            join(export_folder, "tfidf.transformer.bin"),
+                            protocol=2)
+        model = [model for model in self.models if model.name == model_name][0]
+        e = Experiment(self.X, self.y, model.estimator, None)
+        model_filename = join(export_folder, "model.bin")
+        e.save_model(model_filename)
 
     def test(self, X, y_true, model):
         y_predict = model.predict(X)

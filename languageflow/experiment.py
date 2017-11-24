@@ -12,6 +12,7 @@ import time
 
 from underthesea.util.file_io import write
 
+from languageflow.model.sgd import SGDClassifier
 from languageflow.validation.validation import TrainTestSplitValidation, \
     CrossValidation
 
@@ -75,14 +76,11 @@ class Experiment:
         except Exception as e:
             raise (e)
             print("Error:", e)
-            # f1 = 0
-            # accuracy = 0
         return time_result
 
     def save_model(self, model_filename=None):
-        if isinstance(self.estimator, OneVsRestClassifier):
-            self.estimator.fit(self.X, self.y)
-            joblib.dump(self.estimator, model_filename, protocol=2)
-            pass
-        else:
-            self.estimator.fit(self.X, self.y, model_filename=model_filename)
+        estimators = [OneVsRestClassifier, SGDClassifier]
+        for estimator in estimators:
+            if isinstance(self.estimator, estimator):
+                self.estimator.fit(self.X, self.y)
+                joblib.dump(self.estimator, model_filename)
