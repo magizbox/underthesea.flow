@@ -37,6 +37,11 @@ setup(
     license="MIT license",
     zip_safe=False,
     keywords='underthesea_flow',
+    entry_points={
+        'console_scripts': [
+            'languageflow=languageflow.cli:main'
+        ]
+    },
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
