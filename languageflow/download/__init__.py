@@ -80,4 +80,5 @@ def download_component(component, force=False):
 if __name__ == '__main__':
     # component = "hoang_word2vec_news_vn"
     # post_process(component)
+    pass
 
