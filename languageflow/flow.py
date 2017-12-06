@@ -55,7 +55,13 @@ class Flow:
                 e = Experiment(X, y, model.estimator, self.scores,
                                self.validation_method)
                 e.log_folder = self.log_folder
-                e.run(self.transformers)
+                try:
+                    e.run()
+                except TypeError:
+                    # in case model is Naive Bayes
+                    # transfomer is tfidf
+                    X = X.toarray()
+                    e.run()
 
     def visualize(self):
         pass
@@ -78,9 +84,17 @@ class Flow:
                             join(export_folder, "tfidf.transformer.bin"),
                             protocol=2)
         model = [model for model in self.models if model.name == model_name][0]
-        e = Experiment(self.X, self.y, model.estimator, None)
         model_filename = join(export_folder, "model.bin")
-        e.save_model(model_filename)
+        try:
+            e = Experiment(self.X, self.y, model.estimator, None)
+            e.save_model(model_filename)
+        except TypeError:
+            # in case model is Naive Bayes
+            # transfomer is tfidf
+            self.X = self.X.toarray()
+            e = Experiment(self.X, self.y, model.estimator, None)
+            e.save_model(model_filename)
+
 
     def test(self, X, y_true, model):
         y_predict = model.predict(X)

@@ -33,7 +33,7 @@ class Experiment:
         self.validation = validation
         self.log_folder = "."
 
-    def run(self, transformers):
+    def run(self):
         start = time.time()
 
         try:
@@ -42,6 +42,8 @@ class Experiment:
                                                                     self.y,
                                                                     test_size=self.validation.test_size)
                 self.estimator.fit(X_train, y_train)
+
+
                 n_train = len(y_train)
                 n_test = len(y_test)
                 y_pred = self.estimator.predict(X_test)
@@ -75,7 +77,6 @@ class Experiment:
             }
         except Exception as e:
             raise (e)
-            print("Error:", e)
         return time_result
 
     def save_model(self, model_filename=None):
