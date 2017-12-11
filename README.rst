@@ -6,8 +6,8 @@ LanguageFlow
 
 Thư viện chứa dữ liệu và các model cho các thí nghiệm xử lý ngôn ngữ tự nhiên
 
-* Nguồn mở: GNU General Public License v3
-* Tài liệu: `link <https://docs.google.com/document/d/e/2PACX-1vQH3FxuTwzOns9tjvvhrmpH6YqWng4JDJZ4fqEcb5BrTnIwEMZh3ZVeaGzFSwcIN70GRk40c2yn3L_L/pub>`_
+* Nguồn mở : GNU General Public License v3
+* Hướng dẫn: `languageflow.readthedocs.io <http://languageflow.readthedocs.io/vi/latest/readme.html>`_
 
 Prerequisite
 ----------------------------------------
