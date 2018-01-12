@@ -4,11 +4,9 @@ Underthesea LanguageFlow
 
 .. image:: https://img.shields.io/badge/latest-1.1.6-brightgreen.svg
 
+Toolkit hỗ trợ quá trình huấn luyện mô hình xử lý ngôn ngữ tự nhiên tiếng Việt.
 
-Data loaders and abstractions for text and NLP
-
-* Free software: GNU General Public License v3
-* Documentation: `link <https://docs.google.com/document/d/e/2PACX-1vQH3FxuTwzOns9tjvvhrmpH6YqWng4JDJZ4fqEcb5BrTnIwEMZh3ZVeaGzFSwcIN70GRk40c2yn3L_L/pub>`_
+* Nguồn mở: GNU General Public License v3
 
 Prerequisite
 ----------------------------------------
@@ -20,8 +18,8 @@ Install dependencies
     $ pip install fasttext
 
 
-Installation
-----------------------------------------
+Cài đặt
+-------
 
 
 Stable version
