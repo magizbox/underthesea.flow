@@ -1,26 +1,18 @@
-LanguageFlow documentation
+Tài liệu LanguageFlow
 ======================================
 
-Data loaders and abstractions for text and NLP
+Contents:
 
 .. toctree::
-   :maxdepth: 1
-   :caption: Notes
+   :maxdepth: 2
 
    readme
    installation
    usage
+   modules
    contributing
    authors
    history
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Package Reference
-
-   package_reference
-
-
 
 Indices and tables
 ==================
