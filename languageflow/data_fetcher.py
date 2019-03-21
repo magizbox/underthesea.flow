@@ -1,6 +1,6 @@
 import shutil
 from tabulate import tabulate
-from datasets import REPO
+from languageflow.datasets import REPO
 from languageflow.file_utils import cached_path, CACHE_ROOT
 from pathlib import Path
 
