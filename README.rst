@@ -51,11 +51,12 @@ Components
 Data
 ------------
 
-Download a dataset using `download` command
+Download a dataset using **download** command
 
-```
-languageflow download [DATA]
-```
+.. code-block:: bash
+
+    $ languageflow download [DATA]
+
 
 Datasets
 ~~~~~~~~
