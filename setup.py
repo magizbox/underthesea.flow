@@ -14,6 +14,7 @@ with open('HISTORY.rst') as history_file:
 install_requirements = [
     'Click>=6.0',
     'requests',
+    'tabulate',
     'clint',
     'tqdm'
 ]

@@ -10,10 +10,13 @@ def main(args=None):
 
 
 @main.command()
-@click.argument('data')
-@click.option('-f', '--force', is_flag=True)
+@click.argument('data', required=False)
+@click.option('-f', '--force', is_flag=True, required=False)
 def download(data, force):
-    DataFetcher.download_data(data)
+    if data == None:
+        DataFetcher.list()
+    else:
+        DataFetcher.download_data(data)
     # download_component(component, force)
 
 

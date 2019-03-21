@@ -1,22 +1,8 @@
 import shutil
-
+from tabulate import tabulate
+from datasets import REPO
 from languageflow.file_utils import cached_path, CACHE_ROOT
 from pathlib import Path
-
-REPO = {
-    "VNESES": {
-        "cache_dir": "datasets/LTA",
-        "filepath": "VNESEScorpus.txt"
-    },
-    "VNTQ_SMALL": {
-        "cache_dir": "datasets/LTA",
-        "filepath": "VNTQcorpus-small.txt"
-    },
-    "VNTQ_BIG": {
-        "cache_dir": "datasets/LTA",
-        "filepath": "VNTQcorpus-big.txt"
-    },
-}
 
 
 class DataFetcher:
@@ -50,3 +36,13 @@ class DataFetcher:
             cached_path(url, cache_dir=cache_dir)
             shutil.move(Path(CACHE_ROOT) / cache_dir / "VNTQcorpus-big.txt?dl=1",
                         Path(CACHE_ROOT) / cache_dir / filepath)
+
+    @staticmethod
+    def list():
+        datasets = []
+        for key in REPO:
+            name = key
+            type = REPO[key]["type"]
+            directory = REPO[key]["cache_dir"]
+            datasets.append([name, type, directory])
+        print(tabulate(datasets, headers=["Name", "Type", "Directory"], tablefmt='orgtbl'))
