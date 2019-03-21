@@ -43,6 +43,11 @@ class DataFetcher:
         for key in REPO:
             name = key
             type = REPO[key]["type"]
+            license = REPO[key]["license"]
+            year = REPO[key]["year"]
             directory = REPO[key]["cache_dir"]
-            datasets.append([name, type, directory])
-        print(tabulate(datasets, headers=["Name", "Type", "Directory"], tablefmt='orgtbl'))
+            datasets.append([name, type, license, year, directory])
+
+        print(tabulate(datasets,
+                       headers=["Name", "Type", "License", "Year", "Directory"],
+                       tablefmt='orgtbl'))
