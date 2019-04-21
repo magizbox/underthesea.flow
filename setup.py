@@ -12,6 +12,7 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
 install_requirements = [
+    'flair==0.4.1',
     'Click>=6.0',
     'requests',
     'tabulate',
