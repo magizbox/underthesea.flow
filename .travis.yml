@@ -1,8 +1,7 @@
 language: python
 python: 3.6
 env:
-- TOXENV=py36
-- BOTO_CONFIG=/dev/null
+  - TOXENV=py36 BOTO_CONFIG=/dev/null
 install: pip install tox-travis
 script: tox -e ${TOXENV}
 deploy:
