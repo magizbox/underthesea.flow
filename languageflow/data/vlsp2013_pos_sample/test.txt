@@ -1,0 +1,456 @@
+1	M
+.	CH
+Quyền	N
+tiếp cận	V
+thông tin	N
+pháp luật	N
+và	Cc
+nhu cầu	N
+tìm hiểu	V
+pháp luật	N
+của	E
+người dân	N
+ở	E
+nước	N
+ta	P
+hiện nay	N
+
+1	M
+.	CH
+1	M
+.	CH
+Quyền	N
+được	V
+thông tin	N
+-	CH
+quyền	N
+Hiến định	N
+của	E
+công dân	N
+
+Quyền	N
+được	V
+thông tin	N
+là	C
+một	M
+trong	E
+những	L
+quyền	N
+cơ bản	A
+của	E
+con người	N
+,	CH
+được	V
+ghi nhận	V
+trong	E
+hai	M
+văn kiện	N
+quốc tế	N
+quan trọng	A
+về	E
+quyền	N
+con người	N
+mà	C
+Việt Nam	Np
+đã	R
+tham gia	V
+,	CH
+đó	P
+là	V
+Tuyên ngôn	Np
+toàn	R
+thế giới	N
+về	E
+quyền	N
+con người	N
+năm	N
+1948	M
+và	Cc
+Công ước	N
+quốc tế	N
+về	E
+các	L
+quyền	N
+dân sự	N
+và	Cc
+chính trị	N
+năm	N
+1966	M
+.	CH
+
+Quyền	N
+được	V
+thông tin	N
+là	C
+một	M
+quyền	N
+mang	V
+tính	N
+Hiến định	N
+của	E
+công dân	N
+.	CH
+
+Điều	N
+69	M
+Hiến pháp	N
+nước	N
+Cộng hoà xã hội chủ nghĩa Việt Nam	Np
+năm	N
+1992	M
+đã	R
+ghi nhận	V
+:	CH
+“	CH
+Công dân	N
+có	V
+quyền	N
+tự do	A
+ngôn luận	V
+,	CH
+tự do	A
+báo chí	N
+;	CH
+có	V
+quyền	N
+được	V
+thông tin	N
+...	CH
+theo	V
+quy định	V
+của	E
+pháp luật	N
+”	CH
+.	CH
+
+Trong	E
+thời đại	N
+ngày nay	N
+,	CH
+tiếp cận	V
+thông tin	N
+không chỉ	C
+là	V
+quyền	N
+,	CH
+mà còn	C
+là	V
+một	M
+nhu cầu	N
+cấp thiết	A
+cần	V
+phải	V
+bảo đảm	V
+đối với	E
+mọi	L
+công dân	N
+,	CH
+bởi	E
+thông tin	N
+,	CH
+đặc biệt	A
+là	T
+thông tin	N
+về	E
+pháp luật	N
+,	CH
+chính sách	N
+và	Cc
+hoạt động	N
+của	E
+các	L
+cơ quan	N
+nhà nước	N
+,	CH
+được	V
+coi	V
+là	C
+một	M
+trong	E
+những	L
+yếu tố	N
+rất	R
+quan trọng	A
+khi	N
+xã hội	N
+được	V
+quản lí	V
+,	CH
+vận hành	V
+theo	V
+các	L
+nguyên tắc	N
+của	E
+nhà nước	N
+pháp quyền	N
+.	CH
+
+Quyền	N
+được	V
+thông tin	N
+của	E
+người dân	N
+là	V
+phương thức	N
+hữu hiệu	A
+gắn bó	V
+Nhà nước	N
+với	E
+nhân dân	N
+,	CH
+khắc phục	V
+tệ	A
+quan liêu	A
+,	CH
+nâng	V
+cao	A
+tính	N
+minh bạch	A
+của	E
+chính sách	N
+và	Cc
+tính	N
+hiệu quả	N
+của	E
+quản lí nhà nước	N
+;	CH
+thể hiện	V
+trách nhiệm	N
+của	E
+Nhà nước	N
+trước	E
+công dân	N
+,	CH
+đồng thời	R
+là	V
+một	M
+trong	E
+những	L
+phương thức	N
+,	CH
+phương tiện	N
+để	E
+nhân dân	N
+làm chủ	V
+đất nước	N
+,	CH
+thực sự	A
+tham gia	V
+vào	E
+quản lí nhà nước	V
+và	Cc
+quản lí	V
+xã hội	N
+,	CH
+thực hiện	V
+phương châm	N
+“	CH
+dân	N
+biết	V
+,	CH
+dân	N
+bàn	N
+,	CH
+dân	N
+làm	V
+,	CH
+dân	N
+kiểm tra	V
+”	CH
+.	CH
+
+Nó	P
+không những	C
+là	V
+quyền	N
+người dân	N
+được	V
+hưởng	V
+,	CH
+mà còn	C
+là	V
+tiền đề	N
+để	E
+đảm bảo	V
+thực hiện	V
+các	L
+quyền	N
+cơ bản	A
+khác	A
+của	E
+công dân	N
+.	CH
+
+Quyền	N
+được	V
+thông tin	N
+của	E
+công dân	N
+bao gồm	V
+hai	M
+khía cạnh	N
+:	CH
+một	M
+là	V
+,	CH
+quyền	N
+của	E
+công dân	N
+chủ động	V
+tiếp cận	V
+,	CH
+thu thập	V
+thông tin	N
+;	CH
+hai	M
+là	V
+,	CH
+quyền	N
+của	E
+công dân	N
+được	V
+các	L
+cơ quan	N
+nhà nước	N
+cung cấp	V
+thông tin	N
+.	CH
+
+Trong	E
+các	L
+thông tin	N
+mà	C
+người dân	N
+có	V
+quyền	N
+được	V
+tiếp cận	V
+,	CH
+thì	C
+thông tin	N
+pháp luật	N
+đóng	V
+vai trò	N
+quan trọng	A
+,	CH
+giúp	V
+người dân	N
+hiểu	V
+và	Cc
+thực hiện	V
+đầy đủ	A
+các	L
+quyền	N
+và	Cc
+nghĩa vụ	N
+pháp lí	N
+của	E
+mình	P
+,	CH
+góp phần	V
+hình thành	V
+,	CH
+phát triển	V
+ý thức	N
+và	Cc
+lối	N
+sống	V
+theo	V
+pháp luật	N
+.	CH
+
+Bảo đảm	V
+quyền	N
+được	V
+thông tin	N
+và	Cc
+tiếp cận	V
+pháp luật	N
+sẽ	R
+góp phần	V
+tạo dựng	V
+nền tảng	N
+vững chắc	A
+cho	V
+một	M
+xã hội	N
+dân chủ	A
+và	Cc
+Nhà nước	N
+pháp quyền	N
+ở	E
+Việt Nam	Np
+.	CH
+
+Thông tin	N
+pháp luật	N
+bao gồm	V
+hai	M
+mảng	N
+chủ yếu	A
+:	CH
+một	M
+là	V
+,	CH
+thông tin	N
+về	E
+nội dung	N
+các	L
+quy định	N
+của	E
+pháp luật	N
+;	CH
+hai	M
+là	V
+,	CH
+thông tin	N
+về	E
+thực hiện	V
+pháp luật	N
+,	CH
+nhất là	X
+hoạt động	N
+của	E
+các	L
+cơ quan	N
+nhà nước	N
+,	CH
+ví dụ	C
+:	CH
+hoạt động	N
+xét xử	V
+của	E
+Toà án	N
+,	CH
+hoạt động	V
+áp dụng	V
+pháp luật	N
+của	E
+các	L
+cơ quan	N
+nhà nước	N
+…	CH
+
+Quyền	N
+tiếp cận	V
+thông tin	N
+pháp luật	N
+của	E
+người dân	N
+phải	V
+được	V
+bảo đảm	V
+một cách	R
+toàn diện	A
+với	E
+ba	M
+yêu cầu	N
+:	CH
+thông tin	N
+đầy đủ	A
+,	CH
+đúng đắn	A
+và	Cc
+kịp thời	A
+.	CH
+

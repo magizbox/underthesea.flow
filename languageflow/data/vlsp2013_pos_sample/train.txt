@@ -1,0 +1,349 @@
+Long đong	A
+đời	N
+chợ	N
+.	CH
+
+Theo	E
+qui hoạch	N
+chung	A
+của	E
+TP.	Ny
+HCM	Ny
+sau	E
+khi	N
+triển khai	V
+dự án	N
+đại lộ	N
+Đông	Np
+-	CH
+Tây	Np
+,	CH
+sẽ	R
+có	V
+10	M
+chợ	N
+đầu mối	N
+buôn bán	V
+nông sản	N
+thực phẩm	N
+trong	E
+nội thành	N
+phải	V
+di dời	V
+ra	R
+ngoại thành	N
+.	CH
+
+Địa điểm	N
+mới	A
+là	V
+chợ	N
+Tam Bình	Np
+(	CH
+quận	N
+Thủ Đức	Np
+)	CH
+,	CH
+chợ	N
+Hóc Môn	Np
+(	CH
+thường	R
+gọi	V
+là	C
+chợ	N
+Tân Xuân	Np
+)	CH
+và	Cc
+chợ	N
+thủy hải sản	N
+Bình Điền	Np
+(	CH
+quận	N
+8	M
+)	CH
+.	CH
+
+Trong	E
+đợt	N
+di dời	V
+vào	E
+tháng	N
+10	M
+-	CH
+2005	M
+này	P
+,	CH
+TP	Ny
+tiếp tục	V
+cho	V
+di dời	V
+tiếp	V
+năm	M
+chợ	N
+,	CH
+gồm	V
+chợ	N
+cá	N
+Hòa Bình	Np
+(	CH
+quận	N
+5	M
+)	CH
+,	CH
+chợ	N
+cá	N
+Xóm Củi	Np
+(	CH
+quận	N
+8	M
+)	CH
+,	CH
+chợ	N
+tạm	A
+thủy hải sản	N
+Chánh Hưng	Np
+(	CH
+Bình Chánh	Np
+)	CH
+,	CH
+Sân Cá	Np
+50	M
+và	Cc
+chợ	N
+Mai Xuân Thưởng	Np
+(	CH
+quận	N
+6	M
+)	CH
+.	CH
+
+Ngoài	E
+một số	L
+nhỏ	A
+gồm	V
+29	M
+hộ	N
+ở	E
+chợ	N
+Mai Xuân Thưởng	Np
+sẽ	R
+di dời	V
+về	V
+chợ	N
+Tân Xuân	Np
+thì	C
+tất cả	L
+các	L
+hộ	N
+kinh doanh	V
+còn	V
+lại	R
+ở	E
+năm	N
+chợ	N
+này	P
+theo	E
+dự kiến	N
+đều	R
+sẽ	R
+di dời	V
+ra	E
+Trung tâm	N
+thương mại	N
+Bình Điền	Np
+(	CH
+tên	N
+gọi	V
+hiện tại	N
+)	CH
+.	CH
+
+Các	L
+hộ	N
+phải	V
+di dời	V
+và	Cc
+chấp hành	V
+tốt	A
+các	L
+chủ trương	N
+,	CH
+chính sách	N
+,	CH
+kế hoạch	N
+di dời	V
+,	CH
+bàn giao	V
+mặt bằng	N
+trước	E
+20	M
+-	CH
+10	M
+-	CH
+2005	M
+sẽ	R
+được	V
+thưởng	V
+5	M
+triệu	M
+đồng	Nu
+;	CH
+nếu	C
+giao	V
+mặt bằng	N
+trước	E
+30	M
+-	CH
+10	M
+-	CH
+2005	M
+sẽ	R
+được	V
+thưởng	V
+2	M
+triệu	M
+đồng	Nu
+.	CH
+
+Song	C
+cho	E
+đến	E
+thời điểm	N
+này	P
+,	CH
+chợ	N
+Bình Điền	Np
+vẫn	R
+“	CH
+chưa	R
+hoàn thành	V
+”	CH
+.	CH
+
+Trong	E
+khi	N
+đó	P
+,	CH
+nhiều	A
+tiểu thương	N
+và	Cc
+Ban	N
+quản lý	V
+chợ	N
+Mai Xuân Thưởng	Np
+cho	V
+biết	V
+khi	N
+di dời	V
+ra	V
+đây	P
+họ	P
+phải	V
+vào	V
+khu	N
+tạm	A
+buôn bán	V
+để	E
+chờ	V
+khoảng	A
+quí	N
+1	M
+hoặc	Cc
+2	M
+-	CH
+2006	M
+mới	R
+chính thức	A
+nhận	V
+sạp	N
+.	CH
+
+Phải	V
+chấp hành	V
+chủ trương	N
+và	Cc
+kế hoạch	N
+di dời	V
+chợ	N
+dù	E
+đang	R
+bước	V
+vào	E
+thời điểm	N
+làm ăn	V
+được	A
+nhất	A
+của	E
+một	M
+năm	N
+,	CH
+hàng	R
+ngàn	M
+tiểu thương	N
+và	Cc
+lao động	N
+liên quan	V
+không	R
+biết	V
+công việc	N
+làm ăn	V
+của	E
+mình	P
+rồi	C
+sẽ	R
+ra	V
+sao	P
+...	CH
+
+Những	L
+ngày	N
+chợ	N
+cuối	A
+...	CH
+
+Sạp	N
+hàng	N
+của	E
+chị	Nc
+Nguyễn Thị Kim Hà	Np
+nằm	V
+ở	E
+chợ	N
+Mai Xuân Thưởng	Np
+(	CH
+quận	N
+6	M
+)	CH
+trên	E
+đường	N
+Phan Văn Khỏe	Np
+.	CH
+
+Cả	P
+tháng	N
+nay	P
+,	CH
+trong	E
+lòng	N
+chị	Nc
+Hà	Np
+có	V
+một	M
+nỗi	Nc
+lo	V
+nặng trĩu	A
+:	CH
+phải	V
+chuẩn bị	V
+mọi	L
+thứ	Nc
+cho	E
+việc	N
+di dời	V
+chợ	N
+vào	E
+giữa	N
+tháng	N
+mười	M
+tới	V
+.	CH

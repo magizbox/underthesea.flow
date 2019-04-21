@@ -2,6 +2,7 @@ import os
 import re
 import shutil
 from enum import Enum
+from os.path import dirname, join
 from typing import Union, List, Dict
 
 from flair.data import TaggedCorpus, Sentence, Token
@@ -19,6 +20,7 @@ MISS_URL_ERROR = "Caution:\n  With closed license dataset, you must provide URL 
 
 class NLPData(Enum):
     VLSP2013_POS = "vlsp2013_pos"
+    VLSP2013_POS_SAMPLE = "vlsp2013_pos_sample"
 
 
 class DataFetcher:
@@ -32,6 +34,11 @@ class DataFetcher:
         data_folder = base_path / data.name.lower()
         if data == NLPData.VLSP2013_POS:
             columns = {0: 'text', 1: 'pos'}
+            return DataFetcher.load_column_corpus(data_folder, columns)
+
+        if data == NLPData.VLSP2013_POS_SAMPLE:
+            columns = {0: 'text', 1: 'pos'}
+            data_folder = join(dirname(__file__), "data", "vlsp2013_pos_sample")
             return DataFetcher.load_column_corpus(data_folder, columns)
 
     @staticmethod
