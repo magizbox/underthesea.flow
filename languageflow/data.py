@@ -1,3 +1,8 @@
+import logging
+
+log = logging.getLogger("languageflow")
+
+
 class Corpus:
     pass
 

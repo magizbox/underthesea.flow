@@ -34,8 +34,8 @@ REPO = {
         "year": "2013",
         "filepath": ""
     },
-    "VLSP2013-POS": {
-        "cache_dir": "datasets/VLSP2013-POS",
+    "VLSP2013_POS": {
+        "cache_dir": "datasets/vlsp2013_pos",
         "type": "Tagged",
         "license": "Close",
         "year": "2013",

@@ -13,7 +13,7 @@ def main(args=None):
 @click.argument('dataset', required=True)
 @click.argument('url', required=False)
 def download(dataset, url):
-    DataFetcher.download_data(dataset, url)
+    DataFetcher.download_dataset(dataset, url)
 
 
 @main.command()
