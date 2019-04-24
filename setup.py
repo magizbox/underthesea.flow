@@ -6,7 +6,7 @@ import os
 from setuptools import setup, find_packages
 
 # Use the VERSION file to get version
-version_file = os.path.join(os.path.dirname(__file__), 'underthesea', 'VERSION')
+version_file = os.path.join(os.path.dirname(__file__), 'languageflow', 'VERSION')
 with open(version_file) as fh:
     version = fh.read().strip()
 
