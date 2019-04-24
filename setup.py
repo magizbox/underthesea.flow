@@ -2,8 +2,13 @@
 # -*- coding: utf-8 -*-
 
 """The setup script."""
-
+import os
 from setuptools import setup, find_packages
+
+# Use the VERSION file to get version
+version_file = os.path.join(os.path.dirname(__file__), 'underthesea', 'VERSION')
+with open(version_file) as fh:
+    version = fh.read().strip()
 
 with open('README.rst') as readme_file:
     readme = readme_file.read()
@@ -25,8 +30,8 @@ test_requirements = []
 
 setup(
     name='languageflow',
-    version='1.1.10-rc',
-    description="Useful stuffs for NLP experiments",
+    version=version,
+    description="Data loaders and abstractions for text and NLP",
     long_description=readme + '\n\n' + history,
     author="Vu Anh",
     author_email='anhv.ict91@gmail.com',
