@@ -23,9 +23,13 @@ install_requirements = [
     'clint',
     'tqdm',
     'scikit-learn==0.20.3',
-    'joblib==0.13.2'
+    'joblib==0.13.2',
+    'Cython',
+    'fasttext'
 ]
-
+dependency_links = [
+    "git+ssh://git@github.com/facebookresearch/fastText.git@v0.2.0#egg=fasttext-v0.2.0"
+]
 setup_requirements = []
 
 test_requirements = []
@@ -59,4 +63,5 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     setup_requires=setup_requirements,
+    dependency_links=dependency_links
 )
