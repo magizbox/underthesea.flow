@@ -4,7 +4,7 @@ env:
 - TOXENV=py36
 install:
     - pip install tox-travis
-    - pip install cython
+    - pip install Cython
 script: tox -e ${TOXENV}
 deploy:
   provider: pypi
