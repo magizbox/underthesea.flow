@@ -25,7 +25,7 @@ install_requirements = [
     'scikit-learn==0.20.3',
     'joblib==0.13.2',
     'Cython',
-    'fasttext'
+    'fasttext==0.8.22'
 ]
 dependency_links = [
     "git+ssh://git@github.com/facebookresearch/fastText.git@v0.2.0#egg=fasttext-v0.2.0"
