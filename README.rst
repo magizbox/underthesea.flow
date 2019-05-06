@@ -27,7 +27,7 @@ Install dependencies
 
 .. code-block:: bash
 
-    $ pip install future, tox, joblib
+    $ pip install future, tox
     $ pip install numpy scipy pandas scikit-learn==0.19.1
     $ pip install python-crfsuite==0.9.5
     $ pip install Cython
