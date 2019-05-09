@@ -41,6 +41,13 @@ REPO = {
         "year": "2013",
         "filepath": ""
     },
+    "VLSP2016-NER": {
+        "cache_dir": "datasets/VLSP2016-NER",
+        "type": "Tagged",
+        "license": "Close",
+        "year": "2016",
+        "filepath": ""
+    },
     "VTB-CHUNK": {
         "cache_dir": "datasets/VTB-CHUNK",
         "type": "Tagged",
@@ -48,11 +55,11 @@ REPO = {
         "year": "2017",
         "filepath": ""
     },
-    "VLSP2016-NER": {
-        "cache_dir": "datasets/VLSP2016-NER",
-        "type": "Tagged",
-        "license": "Close",
-        "year": "2016",
+    "UTS2017_BANK": {
+        "cache_dir": "datasets/uts2017_bank",
+        "type": "Categorized",
+        "license": "Open",
+        "year": "2017",
         "filepath": ""
     },
     "VLSP2018-NER": {
