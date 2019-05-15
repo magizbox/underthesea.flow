@@ -27,8 +27,7 @@ Install dependencies
 
 .. code-block:: bash
 
-    $ pip install future, tox, joblib
-    $ pip install numpy scipy pandas scikit-learn==0.19.1
+    $ pip install future, tox
     $ pip install python-crfsuite==0.9.5
     $ pip install Cython
     $ pip install -U fasttext --no-cache-dir --no-deps --force-reinstall
@@ -69,5 +68,26 @@ Datasets
 
 The datasets module currently contains:
 
-* PlaintextCorpus: VNESES, VNTQ_SMALL, VNTQ_BIG
-* CategorizedCorpus: VNTC
+* Tagged: VLSP2018-NER, VTB-CHUNK*, VLSP2016-NER*, VLSP2013-POS*, VLSP2013-WTK*
+* Categorized: AIVIVN2019_SA*, VLSP2018_SA*, UTS2017_BANK, VLSP2016_SA*, VNTC
+* Plaintext: VNESES, VNTQ_SMALL, VNTQ_BIG
+
+Caution (*): With closed license dataset, you must provide URL to download
+
+Example
+~~~~~~~~
+
+Download ``UTS2017_BANK`` dataset
+
+.. code-block:: bash
+
+    $ languageflow download UTS2017_BANK
+
+Use ``UTS2017_BANK`` dataset
+
+.. code-block:: python
+
+    >>> from languageflow.data_fetcher import DataFetcher, NLPData
+    >>> corpus = DataFetcher.load_corpus(NLPData.UTS2017_BANK_SA)
+    >>> print(corpus)
+    CategorizedCorpus: 1780 train + 197 dev + 494 test sentences
