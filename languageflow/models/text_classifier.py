@@ -3,6 +3,7 @@ from os.path import join
 import json
 import fastText
 import joblib
+from sklearn.preprocessing import MultiLabelBinarizer
 
 from languageflow.data import Sentence, Label
 
@@ -19,7 +20,10 @@ class TEXT_CLASSIFIER_ESTIMATOR(Enum):
 
 class TextClassifier(Model):
 
-    def __init__(self, estimator: TEXT_CLASSIFIER_ESTIMATOR, **params):
+    def __init__(self, estimator: TEXT_CLASSIFIER_ESTIMATOR, multilabel=False, **params):
+        self.multilabel = multilabel
+        if multilabel:
+            self.y_encoder = MultiLabelBinarizer()
         self.estimator = estimator
         self.params = params
         if estimator == TEXT_CLASSIFIER_ESTIMATOR.FAST_TEXT:
