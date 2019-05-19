@@ -16,3 +16,7 @@ class TestDataSets(TestCase):
     def test_vlsp2016_sa(self):
         corpus = DataFetcher.load_corpus(NLPData.VLSP2016_SA)
         print(corpus)
+
+    def test_vntc(self):
+        corpus = DataFetcher.load_corpus(NLPData.VNTC)
+        print(corpus)

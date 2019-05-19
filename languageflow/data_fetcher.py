@@ -22,6 +22,7 @@ class NLPData(Enum):
     UTS2017_BANK_SA = "uts2017_bank_sa"
     UTS2017_BANK_TC = "uts2017_bank_tc"
     VLSP2016_SA = "vlsp2016_sa"
+    VNTC = "VNTC"
 
 
 class DataFetcher:
@@ -218,6 +219,11 @@ class DataFetcher:
 
         if corpus_id == NLPData.VLSP2016_SA:
             data_folder = Path(CACHE_ROOT) / "datasets" / "vlsp2016_sa"
+            corpus = DataFetcher.load_classification_corpus(data_folder)
+            return DataFetcher.__exact_aspect_labels(corpus)
+
+        if corpus_id == NLPData.VNTC:
+            data_folder = Path(CACHE_ROOT) / "datasets" / "VNTC"
             corpus = DataFetcher.load_classification_corpus(data_folder)
             return DataFetcher.__exact_aspect_labels(corpus)
 
