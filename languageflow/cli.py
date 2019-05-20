@@ -27,6 +27,11 @@ def list(all):
 def remove(data):
     DataFetcher.remove(data)
 
+@main.command(name="import")
+@click.argument('data', required=True)
+@click.argument('input_data_path', required=True)
+def import_corpus(data, input_data_path):
+    DataFetcher.import_corpus(data, input_data_path)
 
 if __name__ == "__main__":
     main()
