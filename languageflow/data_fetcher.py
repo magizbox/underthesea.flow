@@ -275,3 +275,12 @@ class DataFetcher:
                 s = Sentence(text, labels)
                 sentences.append(s)
         return sentences
+
+    @staticmethod
+    def import_corpus(corpus_id: str, input_data_path: str):
+        if corpus_id not in REPO:
+            print(f"No matching distribution found for '{corpus_id}'")
+            return
+        if corpus_id == "VLSP2016_SA":
+            from languageflow.corpus.vlsp2016_sa_corpus import VLSP2016SACorpus
+            VLSP2016SACorpus.import_data(input_data_path)
