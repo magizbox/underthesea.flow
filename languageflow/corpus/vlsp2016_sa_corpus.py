@@ -53,3 +53,5 @@ class VLSP2016SACorpus:
         with open(output_test_file, "w") as f:
             content = "\n".join(test_sentences)
             f.write(content + "\n")
+
+        print(f"Corpus 'VLSP2016_SA' is imported in languageflow at {VLSP2016SACorpus.data_folder}")
