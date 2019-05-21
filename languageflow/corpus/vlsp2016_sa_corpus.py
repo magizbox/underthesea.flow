@@ -1,6 +1,8 @@
 import os
 import shutil
+from os.path import dirname, join
 
+from languageflow.corpus.util import FolderStructure
 from languageflow.file_utils import CACHE_ROOT
 from pathlib import Path
 
@@ -17,6 +19,8 @@ def process_train_data(train_data_file, output_file, label):
 
 class VLSP2016SACorpus:
     data_folder = Path(CACHE_ROOT) / "datasets" / "vlsp2016_sa"
+    required_folder = True
+    required_file = False
 
     @staticmethod
     def reset_folder():
@@ -28,6 +32,14 @@ class VLSP2016SACorpus:
 
     @staticmethod
     def import_data(input_data_path: str):
+        if VLSP2016SACorpus.required_folder and not Path(input_data_path).is_dir():
+            print(f"Input path must be a folder but your input is {input_data_path}")
+            raise SystemExit("")
+        if VLSP2016SACorpus.required_file and not Path(input_data_path).is_file():
+            print(f"Input path must be a file but your input is {input_data_path}")
+            raise SystemExit("")
+        raw_sample = join(dirname(dirname(__file__)), "data", "vlsp2016_sa_raw_sample")
+        FolderStructure.check_structure(raw_sample, input_data_path)
         VLSP2016SACorpus.reset_folder()
         input_data_folder = Path(input_data_path)
         train_input_data_folder = input_data_folder / "SA2016-training_data"
@@ -54,4 +66,4 @@ class VLSP2016SACorpus:
             content = "\n".join(test_sentences)
             f.write(content + "\n")
 
-        print(f"Corpus 'VLSP2016_SA' is imported in languageflow at {VLSP2016SACorpus.data_folder}")
+        print(f"[LanguageFlow] Corpus `VLSP2016_SA` is imported in {VLSP2016SACorpus.data_folder}")

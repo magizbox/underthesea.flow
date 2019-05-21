@@ -1,3 +1,4 @@
+from os.path import dirname, join
 from unittest import TestCase, skip
 from languageflow.data_fetcher import DataFetcher, NLPData
 
@@ -5,4 +6,5 @@ from languageflow.data_fetcher import DataFetcher, NLPData
 class TestDataFetcher(TestCase):
 
     def test_import_corpus(self):
-        DataFetcher.import_corpus("VLSP2016_SA", "/home/anhv/Documents/vlsp-data/vlsp2016/sentiment_analysis/VLSP2016_SA_RAW")
+        input_data_path = join(dirname(dirname(__file__)), "languageflow", "data", "vlsp2016_sa_raw_sample")
+        DataFetcher.import_corpus("VLSP2016_SA", input_data_path)
