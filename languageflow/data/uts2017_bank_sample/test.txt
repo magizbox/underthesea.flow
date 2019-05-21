@@ -1,0 +1,50 @@
+__label__CUSTOMER_SUPPORT#negative Gọi k được mà tốn tiền như gì ấy
+__label__CUSTOMER_SUPPORT#negative 12h đêm thì sao nghẽn hả ad, mình cũng từng làm CSKH mình biết giờ nào cao điểm chứ ????
+__label__TRADEMARK#positive Vietcombank ngân hàng tốt
+__label__PROMOTION#neutral Chơi hoài mà không có trúng gì hết
+__label__CARD#negative Vietcom ít cây ATM quá :(
+__label__CUSTOMER_SUPPORT#positive Dạ cảm ơn ạ
+__label__LOAN#negative Moi tuan vua roi minh ghe ngan hang hoi vay thế chấp xổ đỏ để lay von lam an, ma ngan hang bao la vay ngắn hạn thì 0,88->1,0 , con vay trung hạn thi lai xuat len den 11,5=>12 phay. Lai con doi phai co giay báo kê khai thu nhập hang thang nua. Làm khó đủ điều, vậy ma o day lai bảo vay lai xuat co 7,3. Toàn đánh lừa người dân k à .
+__label__CUSTOMER_SUPPORT#negative tôi chả còn ưu đãi hay lãi suất gì, tôi chỉ cần mong đến sáng mai để chuyển qua ngân hàng kahcs xài cho dịch vụ tốt hơn thui,
+__label__CUSTOMER_SUPPORT#negative Vietcombank càng cập nhật bản mới khách hàng càng phải mất quá nhiều thời gian chờ đợi. Tôi mở tk vcb rất rất lâu từ lúc viết tay toàn bộ nv nhiệt tình tư vấn, tới lúc bắt đầu khai thác mảng điện từ là chậm dần đều, càng hiện đại khách hàng càng mất quá nhiều thời gian. Tôi đang chờ ở vcb lạc long quân phút thứ 30 vẫn ko gd nổi.
+__label__CUSTOMER_SUPPORT#positive Mình đã dùng và thấy rất tiện ích
+__label__CUSTOMER_SUPPORT#positive ok. thanks ad
+__label__CUSTOMER_SUPPORT#positive Dùng rất ok,m tin dùng đã từ lâu rồi nhé!
+__label__CUSTOMER_SUPPORT#positive IB của VCB thực sự là tiện dụng và an toàn so với dv một số NH khác m đã dùng, lại có thể nạp thẻ đt, chuyển tiền và gửi tiết kiệm bất cứ lúc nào mà ko phải ra quầy. Mình 100% hài lòng với tiện ích của VCB
+__label__CUSTOMER_SUPPORT#positive dùng nhiều ngân hàng điện tử của các ngân hàng rồi, nhưng thích nhất là của vcb, đúng là ngân hàng số 1 về công nghệ , giao diện thân thiện, font to chứ ko bé tí hin như bidv và MB, mà lại có ứng dụng rất cao  quá nhiều tiện ích. Yêu nhất ở khoản là miễn phí nữa chớ hớ hớ,
+__label__CUSTOMER_SUPPORT#positive Mình cung thấy vậy. Thấy cái phần mềm này tiện dụng mà dễ tìm kinh ng
+__label__CUSTOMER_SUPPORT#positive Thanks ad
+__label__PROMOTION#negative Một khách hàng trúng tới 136 lần.... không thể tin nổi luôn á. Nói chung chỉ là chiêu thức câu khách của NH thôi còn chả thấy người nào xung quanh trúng nổi 1 cái phiếu mua hàng luôn !
+__label__MONEY_TRANSFER#negative Chuyen tiền k nhận Dc tiên
+__label__CUSTOMER_SUPPORT#positive Cảm ơn ạ
+__label__CUSTOMER_SUPPORT#negative Khi minh ck , ngân hàng việtcombank không gởi tn tới số đt đăng kí , mình dt lên ngân hàng họ đổi thừa do mạng của đien thoại bị nghẽn mạch , tất cả tin nhắn bạn bè gởi đến điều nhận đc, chỉ có tin nhắn đăng kí sms thi kg nhận dc
+__label__CUSTOMER_SUPPORT#positive Dạ vâng e cảm ơn ad nhiều nhé
+__label__CUSTOMER_SUPPORT#negative Khách hàng đứng ngồi la liệt. Các bạn nên tìm giải pháp để khắc phục vấn đề này. Mất quá nhiều thời gian của khách
+__label__CUSTOMER_SUPPORT#positive Vâng.thanks ad ạk
+__label__CUSTOMER_SUPPORT#positive Cám ơn ad nhé
+__label__CUSTOMER_SUPPORT#negative Gọi tổng đài 30’ ko đc. Thế này thì mất thẻ master ngồi khóc à
+__label__CUSTOMER_SUPPORT#positive Da e cam on a
+__label__CARD#positive Mình rất tin tưởng và lúc nào cũng chỉ xài thẻ vcb thôi ! Mọi người hãy dùng đi sẽ thấy kết quả ngay mà!
+__label__CUSTOMER_SUPPORT#negative Vietcombank  số hotline này gọi từ sáng đến chiều chục cuộc ko ai nghe lúc nào cũng đường dây bận, quá nản luôn
+__label__INTERNET_BANKING#negative xin hỏi vcb tôi chuyển tiền qua internet banking vcb sang tài khoản Agribank từ 1h chiều thứ 5 đến bây giờ là trưa 12h42p thứ 6 rồi mà bên agribank tôi vẫn chưa nhận được tiền, trong khi đó tài khoản vcb đã trừ tiền. thế bao giờ tôi mới nhận được tiền đây, 1 ngân hàng lớn mà làm ăn quá thất vọng, ko bao giờ tôi dám chuyển qua internet banking của vcb nữa Vietcombank Vietcombank
+__label__CUSTOMER_SUPPORT#negative nghỉ vietcombank đi ae tôi nản cái ngân hàng này lắm rồi ! không có hỗ trợ người dùng ! sang sacombank mà dùng ae ạ ! thất vọng
+__label__TRADEMARK#negative Mất niềm tin vào vcb rùi
+__label__CUSTOMER_SUPPORT#negative alo tổng đài k đc, bận miết. rồi ck k báo về đt, bị miết tình trạng này, bực ghê
+__label__CUSTOMER_SUPPORT#negative Điện thoại TĐ 1900545413 gần 10 cuộc gặp điện thoại viên đều ko đc, làm ăn chán thế
+__label__CUSTOMER_SUPPORT#negative sáng giờ cũng đang điên vụ nè
+__label__CUSTOMER_SUPPORT#negative Vietcombank máy bận hoài gọi đc đâu
+__label__CUSTOMER_SUPPORT#negative Vcb lỗi hoài
+__label__CUSTOMER_SUPPORT#positive Cám ơn bạn
+__label__CARD#negative Vừa đi đi làm thẻ thôi.mà cũng khắt khe khủng khiếp.làm ko đc.?
+__label__CARD#neutral Dùng bọn thẻ Amex này được cái đang khuyến mại nhiều. Nhược điểm của nó là phí chuyển đổi ngoại tệ giá cắt cổ, cao hơn các loại thẻ khác
+__label__CUSTOMER_SUPPORT#positive E cam on nhieu nhe
+__label__CARD#negative Vietcombank bình dương làm ăn chán quá. Đi chỗ nào rút tiền cũng không rút được
+__label__CUSTOMER_SUPPORT#negative Quan tâm. Tôi có gởi thông tin mà không thấy được tư vấn
+__label__CUSTOMER_SUPPORT#positive cam on a
+__label__CUSTOMER_SUPPORT#positive Thanhs ad
+__label__CUSTOMER_SUPPORT#positive Cám ơn ad
+__label__CUSTOMER_SUPPORT#negative Vietcombank thề là tôi gọi 6 lần chả được lần nào, mỗi lần chờ 7-8 phút nhưng đtv vẫn bận, chắc các bạn chỉ có 1 người trả lời KH nhỉ?
+__label__CUSTOMER_SUPPORT#negative Chất lượng phục vụ ở tổng đài rất kém.. Gọi cả 10 cuộc không ai nghe. Yêu cầu tuyển thêm nhân viên trực tổng đài .
+__label__CARD#negative Từ ngày sd thẻ vcb mình chưa khi nào rút tiền mà ra tiền tại atm cả lúc thì atm ngừng hoạt lúc thì lỗi mà vẫn nt trừ tiền đầy đủ ( trên 15 lần rồi)...nhưng khi vào nh để rút tiền ktra số dư thì ko bị mất nên mình không gọi tổng đài vì mỗi lần bị vậy mà gọi thì không biết phải gọi bao nhiêu lần nưa. T5 Cty chuyển sang trả lương vcb nên phải chịu cứ 1 tháng ra rút 1 lần đưa qua ACB nộp hic
+__label__CUSTOMER_SUPPORT#positive Ok thanks ad
+__label__CUSTOMER_SUPPORT#negative Chăm sóc KH kg tốt lắm. Vào giao dịch NV mặt 1 đống kg thấy nụ cười thân thiện. Đi NH khác thấy khác hẳn. 1 trời 1 vực.lo mà đi học hỏi ngta😈
