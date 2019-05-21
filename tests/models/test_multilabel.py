@@ -21,7 +21,6 @@ class TestMultiLabel(TestCase):
         # corpus: CategorizedCorpus = DataFetcher.load_corpus(NLPData.AIVIVN2019_SA)
         pipeline = Pipeline(
             steps=[('features', CountVectorizer(ngram_range=(1, 2), max_features=4000)),
-                   ('multilabel_binarizer',  MultiLabelBinarizer()),
                    ('estimator', OneVsRestClassifier(SVC(kernel='linear', C=0.3)))]
         )
         classifier = TextClassifier(estimator=TEXT_CLASSIFIER_ESTIMATOR.PIPELINE, pipeline=pipeline, multilabel=True)
