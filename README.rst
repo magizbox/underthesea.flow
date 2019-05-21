@@ -31,7 +31,7 @@ Install dependencies
     $ pip install python-crfsuite==0.9.5
     $ pip install Cython
     $ pip install -U fasttext --no-cache-dir --no-deps --force-reinstall
-    $ pip install xgboost
+    $ pip install xgboost==0.82
 
 
 Installation
