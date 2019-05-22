@@ -34,6 +34,7 @@ class TestMultiLabel(TestCase):
         print(score)
 
         classifier = TextClassifier.load(tmp_model_folder)
+
         sentence = Sentence('Dịch vụ tiện dụng quá')
         classifier.predict(sentence)
         print(sentence)
