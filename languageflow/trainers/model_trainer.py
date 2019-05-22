@@ -7,7 +7,6 @@ warnings.simplefilter("ignore", category=PendingDeprecationWarning)
 
 from sklearn.metrics import f1_score
 from sklearn.preprocessing import LabelEncoder
-from sklearn.svm import SVC
 from languageflow.data import Corpus, Sentence
 from languageflow.models.text_classifier import TextClassifier, TEXT_CLASSIFIER_ESTIMATOR
 import shutil
@@ -16,8 +15,6 @@ from os.path import join
 from pathlib import Path
 import fastText
 import joblib
-
-from languageflow.transformer.count import CountVectorizer
 
 
 class ModelTrainer:
@@ -28,8 +25,9 @@ class ModelTrainer:
 
     def train(self, model_folder: str, scoring=f1_score):
         score = {}
-        metadata = {"estimator": self.classifier.estimator.value}
-        train, dev, test = self._convert_corpus(self.corpus)
+        multilabel = self.classifier.multilabel
+        metadata = {"estimator": self.classifier.estimator.value, "multilabel": multilabel}
+        train, dev, test = self._convert_corpus(self.corpus, multilabel=multilabel)
         X_train, y_train = train
         X_dev, y_dev = dev
         X_test, y_test = test
@@ -89,14 +87,23 @@ class ModelTrainer:
 
         if self.classifier.estimator == TEXT_CLASSIFIER_ESTIMATOR.PIPELINE:
             pipeline = self.classifier.pipeline
+            if self.classifier.multilabel:
+                y_train = self.classifier.y_encoder.fit_transform(y_train)
+                joblib.dump(self.classifier.y_encoder, join(model_folder, "y_encoder.joblib"))
             pipeline.fit(X_train, y_train)
             joblib.dump(pipeline, join(model_folder, "pipeline.joblib"))
 
             y_dev_pred = pipeline.predict(X_dev)
-            dev_score = scoring(y_dev, y_dev_pred)
+            if self.classifier.multilabel:
+                dev_score = scoring(self.classifier.y_encoder.transform(y_dev), y_dev_pred)
+            else:
+                dev_score = scoring(y_dev, y_dev_pred)
 
             y_test_pred = pipeline.predict(X_test)
-            test_score = scoring(y_test, y_test_pred)
+            if self.classifier.multilabel:
+                test_score = scoring(self.classifier.y_encoder.transform(y_test), y_test_pred)
+            else:
+                test_score = scoring(y_test, y_test_pred)
             score["dev_score"] = dev_score
             score["test_score"] = test_score
             print("Dev score:", dev_score)
@@ -107,13 +114,16 @@ class ModelTrainer:
             f.write(content)
         return score
 
-    def _convert_corpus(self, corpus: Corpus):
+    def _convert_corpus(self, corpus: Corpus, multilabel=False):
         X_train = [s.text for s in corpus.train]
-        y_train = [s.labels[0].value for s in corpus.train]
-
         X_dev = [s.text for s in corpus.dev]
-        y_dev = [s.labels[0].value for s in corpus.dev]
-
         X_test = [s.text for s in corpus.test]
-        y_test = [s.labels[0].value for s in corpus.test]
+        if multilabel:
+            y_train = [[label.value for label in s.labels] for s in corpus.train]
+            y_dev = [[label.value for label in s.labels] for s in corpus.dev]
+            y_test = [[label.value for label in s.labels] for s in corpus.test]
+        else:
+            y_train = [s.labels[0].value for s in corpus.train]
+            y_dev = [s.labels[0].value for s in corpus.dev]
+            y_test = [s.labels[0].value for s in corpus.test]
         return (X_train, y_train), (X_dev, y_dev), (X_test, y_test)

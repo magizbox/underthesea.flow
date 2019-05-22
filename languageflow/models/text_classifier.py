@@ -3,6 +3,7 @@ from os.path import join
 import json
 import fastText
 import joblib
+from sklearn.preprocessing import MultiLabelBinarizer
 
 from languageflow.data import Sentence, Label
 
@@ -19,7 +20,10 @@ class TEXT_CLASSIFIER_ESTIMATOR(Enum):
 
 class TextClassifier(Model):
 
-    def __init__(self, estimator: TEXT_CLASSIFIER_ESTIMATOR, **params):
+    def __init__(self, estimator: TEXT_CLASSIFIER_ESTIMATOR, multilabel=False, **params):
+        self.multilabel = multilabel
+        if multilabel:
+            self.y_encoder = MultiLabelBinarizer()
         self.estimator = estimator
         self.params = params
         if estimator == TEXT_CLASSIFIER_ESTIMATOR.FAST_TEXT:
@@ -60,7 +64,12 @@ class TextClassifier(Model):
 
         if estimator == TEXT_CLASSIFIER_ESTIMATOR.PIPELINE:
             classifier = TextClassifier(estimator=TEXT_CLASSIFIER_ESTIMATOR.PIPELINE)
+            if "multilabel" in metadata:
+                if metadata["multilabel"]:
+                    classifier.multilabel = True
+                    classifier.y_encoder = joblib.load(join(model_folder, "y_encoder.joblib"))
             classifier.pipeline = joblib.load(join(model_folder, "pipeline.joblib"))
+
             return classifier
 
     def predict(self, sentence: Sentence):
@@ -83,5 +92,9 @@ class TextClassifier(Model):
         if self.estimator == TEXT_CLASSIFIER_ESTIMATOR.PIPELINE:
             text = sentence.text
             y = self.pipeline.predict([text])
-            y = list(y)
+            if self.multilabel:
+                y = self.y_encoder.inverse_transform(y)
+                y = list(y[0])
+            else:
+                y = list(y)
             sentence.add_labels(y)

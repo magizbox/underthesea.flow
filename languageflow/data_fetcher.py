@@ -21,6 +21,7 @@ class NLPData(Enum):
     AIVIVN2019_SA_SAMPLE = "aivivn2019_sa_sample"
     UTS2017_BANK_SA = "uts2017_bank_sa"
     UTS2017_BANK_TC = "uts2017_bank_tc"
+    UTS2017_BANK_SA_SAMPLE = "uts2017_bank_sa_sample"
     VLSP2016_SA = "vlsp2016_sa"
     VNTC = "VNTC"
 
@@ -210,6 +211,10 @@ class DataFetcher:
 
         if corpus_id == NLPData.UTS2017_BANK_SA:
             data_folder = Path(CACHE_ROOT) / "datasets" / "uts2017_bank"
+            return DataFetcher.load_classification_corpus(data_folder)
+
+        if corpus_id == NLPData.UTS2017_BANK_SA_SAMPLE:
+            data_folder = SAMPLE_CACHE_ROOT / "uts2017_bank_sample"
             return DataFetcher.load_classification_corpus(data_folder)
 
         if corpus_id == NLPData.UTS2017_BANK_TC:

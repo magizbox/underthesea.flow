@@ -1,0 +1,50 @@
+__label__CUSTOMER_SUPPORT#negative Cần tư vấn mà add  k rep
+__label__CUSTOMER_SUPPORT#negative Hotline khó gọi quá gọi mãi ko thưa máy à
+__label__CUSTOMER_SUPPORT#negative Mình thấy câu dịch vụ tốt nhất cho kh khó lắm. Mình nộp tiền vào 15/07/2017 mà hôm nay thấy sai sai muốn xem lại bản kê từng loại tiền mà thu ngân lại nói đã huỷ hết chứng từ, vậy nên mình đang thiếu 1 tr chắc phải bù vậy. Một tuần làm việc ... Buồn
+__label__TRADEMARK#negative Em chọn chuyển tiền trong nước. Chuyển đến số tk. Trong giờ hành chính thì thông báo ko thể thực hiện. Ngoài giờ hành chính thì thông báo hết phiên giao dịch.Như thẻ Vietcombank của em muốn chuyển cho ai cũng đc. Thậm chí 12h đêm vẫn chuyển đc.Em thấy BIDV như vậy bất tiện quá. Ad xem lại dùm em nhá.
+__label__CARD#negative __label__CUSTOMER_SUPPORT#negative Mình xài cái thể VISA của BIDV hạn mức 100tr, gần 1 năm nay mới lấy ra dùng, ai ngờ bị khóa thẻ. Suýt chết. Hỏi ra thì nó trả lời do mình có xài thẻ và đã đóng tiền trả lại cả năm nay rồi mà mấy con mẹ ngoài Hà Nội quản lý thẻ không chịu cập nhật nên thẻ mới bị khóa. Trong khi mình đóng dư 2,3tr nó còn chuyển trả lại mình. Có ai nghe tin được không? Chi Nhánh đổ lỗi cho mấy con mẹ quản lý thẻ ngoài Hà Nội. Ghét bố mày hủy thẻ luôn. Thời bây giờ mà làm ăn kiểu này mới hay.
+__label__CUSTOMER_SUPPORT#negative Troi đăng cho vui hoi chưa chắc trả lời?
+__label__CARD#negative Nói chứ có làm mỗi cái thẻ ở ngân hàng này để Cty chuyển lương mà bị trừ tiền khang luôn...
+__label__CUSTOMER_SUPPORT#negative Bidv nguyễn trãi - hcm, bộ phận khách hàng  doanh nghiệp, mỗi lần lấy sổ phụ cảm giác như hầu hạ, xin xỏ mấy đứa nhân viên. Thấy mặt ko thèm chào, bắt khách hàng phải nhớ số tài khoản chứ đọc tên công ty nó tìm cực. Giao dịch hơn 8 năm mà lâu lâu nó lạ i đòi giấy giới thiệu. Hình như cứ khách hàng mà thân thiện quá thì cảm giác như bị ngược đãi. Mình là đại diện cho doanh nghiệp chứ mình đâu phải hạng khố rách áo om? Ngân hàng thu phí của khách hàng để tuyển nhân viên như thế sao? Chắc con ông cháu cha hay sao nên được ưu ái nhỉ :)
+__label__CUSTOMER_SUPPORT#negative K biet bidv the nao ? Nhung khi sát nhap mhb, minh biet co ng trinh do k co, an o nha xong học lop tu xa, t 7, chu nhat, sau 4 nam co bang gio lam ngan hang, cung mang danh bidv thiet thay nh cai Mac cuoi
+__label__CUSTOMER_SUPPORT#negative Mình mất cái thẻ ATM đợt làm trong tp HCM. Ra Hải Phòng làm lại hẹn 1 tuần đến h cả năm chả thấy thông báo là có làm lại đc k. :)).
+__label__CUSTOMER_SUPPORT#negative Biết là ko nên quơ đũa cả nắmnhuwng nói đến BIDV mình sợ quá trời! Mình có nhu cầu vay vốn nên đem 2 sổ đỏ vàogawjp bên tín dụng! Chả biết bạn í có pai làm bên tín dụng hay khâu nào chả biết mà có thái độ tiếp mình ko 1 chút thiện chí, thậm chí tỏ ra coi thường mình! Mình cũng gắng gượng nán lại để hỏi thủ tục thế nào cái bạn í xem xem sơ sài cáibajn í trả lại với 1 câu là ko vay đc đâu chị ơi! Ôi!!! Quá hãi....
+__label__CUSTOMER_SUPPORT#negative Dạo ni lên BIDV nạp tiền Bảo hiểm nhân thọ Manulife cho khách chờ hơi lâu, phần vì khách đông, phần vì phần mềm thu hộ hay bị lỗi, nhưng phong cách làm việc của nhân viên tính từ thời điểm tưởng đánh nhau với nhân viên Ngân hàng nông nghiệp Can Lộc chạy ra đi vay 5tr với Trung Tran Minh mua điện thoại Nokia 7250 năm 2004 đến nay vẫn còn rất tuyệt vời.
+__label__INTERNET_BANKING#negative Ngân hàng bổ sung VCB vào mục chuyển tiền nhanh 24/7 của Bidv Smart Banking.  Khuyêt điểm lớn thế mà lâu ko khắc phục
+__label__MONEY_TRANSFER#negative chính xác là tôi muốn chuyển đến số tài khoản . Nếu chọn chuyển trong nước thì ko tiện bằng chuyển 24/7.
+__label__PAYMENT#positive mình cũng vui vì tiết kệm được thời gian,
+__label__PAYMENT#negative Rất linh tinh, tôi thanh toán hóa đơn tiền điện qua ngân hàng, có thấy đc chiết khấu 10% đâu
+__label__CUSTOMER_SUPPORT#negative Chang thay tra loi j ka
+__label__OTHER#negative Đkmm
+__label__INTERNET_BANKING#negative T dky E bank rồi, có xác nhận r mà khi liên kết ví momo lại ko dc là như nào?? Loằng ngoằng vkl
+__label__CUSTOMER_SUPPORT#positive Thật tiện lợi chỉ cần ở nhà và mất một ít thời gian là đã có thể mở tk rùi
+__label__INTERNET_BANKING#positive Nhanh chóng thuận tiện , tiết kiệm thời gian chỉ có bidv smartbanking  ,
+__label__CUSTOMER_SUPPORT#negative Lúc trước mình phải tới tận chỗ giao dịch,vừa xa lại còn ngồi chờ lâu ơi là lâu
+__label__CUSTOMER_SUPPORT#positive ui ngân hàng tiện lợi quá nè
+__label__CUSTOMER_SUPPORT#positive Giờ thì vui rùi,bidv thật tuyệt vời
+__label__CUSTOMER_SUPPORT#positive Dịch vụ tiện dụng quá!
+__label__OTHER#positive Hay!
+__label__MONEY_TRANSFER#positive Chị oi chuyển tiền nhanh chóng thuận tiện lắm . Em chuyển sang ngan hàng khác hệ thống trong vòng 5-10 phút đầu bên kia đã nhận được tiền rồi , mà phí lại cực thấp .
+__label__CUSTOMER_SUPPORT#neutral Chỉ lợi ban đầu thui
+__label__CUSTOMER_SUPPORT#positive Ui cái này hay quá nè, ko mất công ra ngân hàng ở nhà mà vẫn làm đc nhiều thứ
+__label__CUSTOMER_SUPPORT#positive Dịch vụ này rất tiện lợi
+__label__CUSTOMER_SUPPORT#positive Ở nhà ngồi bấm bấm là có tài khoản NH rồi. Công nghệ.
+__label__INTEREST_RATE#positive Lãi suất cao hơn 0.1% luôn nè
+__label__CUSTOMER_SUPPORT#positive Đúng là xài BIDV có khác
+__label__CARD#negative __label__CUSTOMER_SUPPORT#negative TUI cũng bó tay với BIDV Cần Thơ. Cả quận NK mà chỉ được lèo tèo mấy thùng ATM và luôn trong tình trạng nhìn thấy chữ Sorry cũng nh.ư hết tiền. Chán ko buồn nói. Qd có khác.
+__label__DISCOUNT#negative Hồi tháng 3 cũng vậy, nói là được 50k Có đâu, đến nơi hỏi thì ngoài Thanh toán điện, thanh toán nước, Internet banking thì còn thêm BSMS nữa mới được. Bó tay!
+__label__MONEY_TRANSFER#negative Như sáng nay, đi rút tiền phải rút khác hệ thống, rút 1 lần mất phí 11k, 4 lần mất 44k. Mất tiền oan uổng.
+__label__PAYMENT#positive Mình sử dụng dịch vụ thanh toán tiền điện của BIDV mấy năm nay rồi. Dịch vụ thật tiện lợi đặc biệt cho những người đi làm vắng nhà thường xuyên, ko phải lo bị cắt điện vì ko kịp nộp tiền.
+__label__CUSTOMER_SUPPORT#negative Chào bạn, tôi rất bất mãn với 1 ngân hàng ở trên Lâm đồng của các bạn nhé
+__label__ACCOUNT#negative Kiểm tra số dt này số tài khoản , lập tức trả lại tiền vào tài khoản . Hôm nay con nào bị chết đói à , mà trừ phí tháng 2 lần thế .. :lập tức kiểm tra lại , muốn lừa đảo phải không ?
+__label__CUSTOMER_SUPPORT#negative dịch vụ thẻ ngân hàng quá tệ, di rut tiền atm toan báo lỗi, ko rút dc số tiền lớn, cmnd của tôi vừa hết hạn thì nhan viên giao dich ko cho rut tai quầy mà bat toi ra rut atm trong khi tôi cần rut so tien lớn. Tiền gửi vo thì nhận nhanh lắm, rut tien cứ nhu di ăn xin ngan hang vay do, toi da rut het tien tu tk bidv va tu nay ko bao gio su dung bat cu dich vu nao tu bidv. chào
+__label__MONEY_TRANSFER#negative Đừng quảng cáo rồi ko có nhé, bên này ck trong hệ thống BIDV cũng mất Tiền, rút tiền cũng mất phí, phí trồng phí, cứ quảng cáo chiêu trò lắm, Như Bên Đông Á Ck nội bộ ko bh mất 1nghin trên smarphone hoặc internet , ck đi khác ngân hàng mất có 5k
+__label__MONEY_TRANSFER#negative __label__INTEREST_RATE#negative Dkm t chuyển vẫn bị mất phí
+__label__INTERNET_BANKING#negative Mình đăng ký dịch vụ trả tiền cước điện thoại,  thấy báo về tin nhắn là bạn thực hiện đăng ký thành công,  vậy mà kết quả 4 tháng này nhân viên thu cước vẫn phải tìm để thu. Chán
+__label__CUSTOMER_SUPPORT#negative Rút thì tiền k ra nhưng vẫn trừ. Hotline thì gọi k đc. K hiểu làm ăn cái kiểu gì. HIỆN ĐẠI QUÁ!!!
+__label__PROMOTION#positive Mình cực thích mấy chương trình từ thiện của BIDV
+__label__SECURITY#negative Nếu vậy thì ai lấy thẻ mình đi thanh toán cũng được và dễ dàng vì ko cần mật khẩu. Lúc truoc mình xài thẻ ATM của ngân hàng khác khi quẹt thẻ nguoi ta yeu cau đưa CMNN và yeu cau nhap mat khau nữa.
+__label__LOAN#negative bidv cho vay hay ko phu thuoc y thich cua thang tham dinh, ko co quy dinh ro rang
+__label__INTEREST_RATE#negative Khi quảng cáo thi bao co 6-7%/1nam nhug den khj di hoi dj lam thi lại noi khác, that su k biet dau ma lần
+__label__CUSTOMER_SUPPORT#negative Toi den bidv de lam thu tuc vay, cb td( tam goi la chi A) dong y voi toi va hd lam hs. Sau khi lam xong hs toi mang den nh ( luc nay chi A ko con phu trach thay vao la a B), xem hs chua day 30’ anh B noi ko cho vay dc. Vay la cung mot noi dung vay, cung hs chi khac la 2 nhan vien khac nhau. The ko la phu thuoc vao nv nh thi la j? kieu thoi tiet luc nang luc mua
+__label__CUSTOMER_SUPPORT#negative Xin noi them trc do toi da vay 1 lan va tat toan trc han, nhu vay ko the noi toi la khach hang ko tin cay
