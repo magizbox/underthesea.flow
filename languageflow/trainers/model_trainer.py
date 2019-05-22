@@ -87,14 +87,23 @@ class ModelTrainer:
 
         if self.classifier.estimator == TEXT_CLASSIFIER_ESTIMATOR.PIPELINE:
             pipeline = self.classifier.pipeline
+            if self.classifier.multilabel:
+                y_train = self.classifier.y_encoder.fit_transform(y_train)
+                joblib.dump(self.classifier.y_encoder, join(model_folder, "y_encoder.joblib"))
             pipeline.fit(X_train, y_train)
             joblib.dump(pipeline, join(model_folder, "pipeline.joblib"))
 
             y_dev_pred = pipeline.predict(X_dev)
-            dev_score = scoring(y_dev, y_dev_pred)
+            if self.classifier.multilabel:
+                dev_score = scoring(self.classifier.y_encoder.transform(y_dev), y_dev_pred)
+            else:
+                dev_score = scoring(y_dev, y_dev_pred)
 
             y_test_pred = pipeline.predict(X_test)
-            test_score = scoring(y_test, y_test_pred)
+            if self.classifier.multilabel:
+                test_score = scoring(self.classifier.y_encoder.transform(y_test), y_test_pred)
+            else:
+                test_score = scoring(y_test, y_test_pred)
             score["dev_score"] = dev_score
             score["test_score"] = test_score
             print("Dev score:", dev_score)

@@ -64,7 +64,12 @@ class TextClassifier(Model):
 
         if estimator == TEXT_CLASSIFIER_ESTIMATOR.PIPELINE:
             classifier = TextClassifier(estimator=TEXT_CLASSIFIER_ESTIMATOR.PIPELINE)
+            if "multilabel" in metadata:
+                if metadata["multilabel"]:
+                    classifier.multilabel = True
+                    classifier.y_encoder = joblib.load(join(model_folder, "y_encoder.joblib"))
             classifier.pipeline = joblib.load(join(model_folder, "pipeline.joblib"))
+
             return classifier
 
     def predict(self, sentence: Sentence):
@@ -87,5 +92,9 @@ class TextClassifier(Model):
         if self.estimator == TEXT_CLASSIFIER_ESTIMATOR.PIPELINE:
             text = sentence.text
             y = self.pipeline.predict([text])
-            y = list(y)
+            if self.multilabel:
+                y = self.y_encoder.inverse_transform(y)
+                y = list(y[0])
+            else:
+                y = list(y)
             sentence.add_labels(y)

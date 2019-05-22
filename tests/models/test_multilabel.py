@@ -34,7 +34,8 @@ class TestMultiLabel(TestCase):
         print(score)
 
         classifier = TextClassifier.load(tmp_model_folder)
-        sentence = Sentence('tuyệt vời')
+        sentence = Sentence('Dịch vụ tiện dụng quá')
         classifier.predict(sentence)
-        shutil.rmtree(tmp_model_folder)
         print(sentence)
+
+        shutil.rmtree(tmp_model_folder)
