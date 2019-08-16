@@ -15,7 +15,7 @@ from languageflow.trainers.model_trainer import ModelTrainer
 
 class TestPipeline(TestCase):
     def test(self):
-        corpus: CategorizedCorpus = DataFetcher.load_corpus(NLPData.AIVIVN2019_SA_SAMPLE)
+        corpus: CategorizedCorpus = DataFetcher.load_corpus("AIVIVN2019_SA_SAMPLE")
         # corpus: CategorizedCorpus = DataFetcher.load_corpus(NLPData.AIVIVN2019_SA)
         pipeline = Pipeline(
             steps=[('features', CountVectorizer(ngram_range=(1, 2), max_features=4000)),

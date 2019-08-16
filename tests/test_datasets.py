@@ -1,10 +1,10 @@
 from unittest import TestCase, skip
 from languageflow.data_fetcher import DataFetcher, NLPData
 
-# @skip
+
 from languageflow.datasets import Dataset
 
-
+@skip
 class TestDataSets(TestCase):
 
     def test_uts2017_bank_sa(self):

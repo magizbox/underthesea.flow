@@ -1,7 +1,7 @@
-from unittest import TestCase
+from unittest import TestCase, skip
 from languageflow.model.xgboost import XGBoostClassifier
 
-
+@skip
 class TestXGBoost(TestCase):
 
     def test_xgboost(self):

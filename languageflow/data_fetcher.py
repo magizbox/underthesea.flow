@@ -91,34 +91,34 @@ class DataFetcher:
         print(f"Dataset {data} is removed.")
 
     @staticmethod
-    def load_corpus(corpus_id: Union[NLPData, str]) -> Corpus:
-        if corpus_id == NLPData.AIVIVN2019_SA:
+    def load_corpus(corpus_id: str) -> Corpus:
+        if corpus_id == "AIVIVN2019_SA":
             data_folder = Path(CACHE_ROOT) / "datasets" / "aivivn2019_sa"
             return DataFetcher.load_classification_corpus(data_folder)
 
-        if corpus_id == NLPData.AIVIVN2019_SA_SAMPLE:
+        if corpus_id == "AIVIVN2019_SA_SAMPLE":
             data_folder = SAMPLE_CACHE_ROOT / "aivivn2019_sa_sample"
             return DataFetcher.load_classification_corpus(data_folder)
 
-        if corpus_id == NLPData.UTS2017_BANK_SA:
+        if corpus_id == "UTS2017_BANK_SA":
             data_folder = Path(CACHE_ROOT) / "datasets" / "uts2017_bank"
             return DataFetcher.load_classification_corpus(data_folder)
 
-        if corpus_id == NLPData.UTS2017_BANK_SA_SAMPLE:
+        if corpus_id == "UTS2017_BANK_SA_SAMPLE":
             data_folder = SAMPLE_CACHE_ROOT / "uts2017_bank_sample"
             return DataFetcher.load_classification_corpus(data_folder)
 
-        if corpus_id == NLPData.UTS2017_BANK_TC:
+        if corpus_id == "UTS2017_BANK_TC":
             data_folder = Path(CACHE_ROOT) / "datasets" / "uts2017_bank"
             corpus = DataFetcher.load_classification_corpus(data_folder)
             return DataFetcher.__exact_aspect_labels(corpus)
 
-        if corpus_id == NLPData.VLSP2016_SA:
+        if corpus_id == "VLSP2016_SA":
             data_folder = Path(CACHE_ROOT) / "datasets" / "vlsp2016_sa"
             corpus = DataFetcher.load_classification_corpus(data_folder)
             return DataFetcher.__exact_aspect_labels(corpus)
 
-        if corpus_id == NLPData.VNTC:
+        if corpus_id == "VNTC":
             data_folder = Path(CACHE_ROOT) / "datasets" / "VNTC"
             corpus = DataFetcher.load_classification_corpus(data_folder)
             return DataFetcher.__exact_aspect_labels(corpus)
