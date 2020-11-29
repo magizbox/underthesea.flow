@@ -12,7 +12,7 @@ from languageflow.trainers.model_trainer import ModelTrainer
 
 class TestFastText(TestCase):
     def test_fasttext(self):
-        corpus: CategorizedCorpus = DataFetcher.load_corpus(NLPData.AIVIVN2019_SA_SAMPLE)
+        corpus: CategorizedCorpus = DataFetcher.load_corpus("AIVIVN2019_SA_SAMPLE")
         params = {"lr": 0.01,
                         "epoch": 20,
                         "wordNgrams": 3,
