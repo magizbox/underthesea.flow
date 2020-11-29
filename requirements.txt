@@ -2,7 +2,7 @@ joblib==0.11
 setuptools==38.4.0
 torch==0.4.0
 requests==2.18.4
-cryptography==2.1.4
+cryptography==3.2
 click==6.7
 numpy==1.13.1
 scipy==0.19.1
