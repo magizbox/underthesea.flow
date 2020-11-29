@@ -23,7 +23,8 @@ LanguageFlow
 
 ⚠️ **WARNING** This project is **archived** and **no longer maintained** **WARNING** ⚠️
 
-⏩ From **underthesea v1.2.0**, languageflow is merged with underthesea. So enjoy a better ``underthesea`` *without languageflow*.
+⏩ From `underthesea v1.2.0 <http://github.com/undertheseanlp/underthesea>`_
+, languageflow is *merged* with underthesea. So enjoy a better ``underthesea`` *without languageflow* dependency.
 
 ⚰️ **RIP Languageflow**
 
