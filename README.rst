@@ -18,6 +18,18 @@ LanguageFlow
         :target: http://languageflow.readthedocs.io/en/latest/
         :alt: Documentation Status
 
+⚠️ **WARNING**
+-------------
+
+⚠️ **WARNING** This project is **archived** and **no longer maintained** **WARNING** ⚠️
+
+⏩ From **underthesea v1.2.0**, languageflow is merged with underthesea. So enjoy a better ``underthesea`` *without languageflow*.
+
+⚰️ **RIP Languageflow**
+
+Old Readme
+----------
+
 Data loaders and abstractions for text and NLP
 
 Requirements
